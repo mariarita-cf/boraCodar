@@ -1,0 +1,47 @@
+* {
+    padding: 20px;
+    margin: 0px;
+    justify-items: center;
+    
+}
+
+header h1 {
+    justify-content: center;
+    color: red;
+    background-color: rgb(8, 1, 8);
+}
+
+.card-vagas {
+    background-color: #ffffff;
+    gap: 10px;
+    width: 100%;
+    max-width:950px;
+    text-align:center;
+    box-sizing: border-box;
+    border-radius: 10%;
+    box-shadow: 0 0 0 20px rgb(107, 239, 13);
+    overflow: auto;
+    
+}
+
+.imagem{
+    border-radius: 15%;
+    
+}
+
+body {
+    color: rgb(8, 8, 8);
+    background: rgb(211, 43, 76);
+}
+
+.botao {
+    
+    
+}
+
+.rodape {
+    color: rgb(252, 249, 249);
+    background-color: rgb(163, 84, 236);
+    margin-top:100px;
+    
+}

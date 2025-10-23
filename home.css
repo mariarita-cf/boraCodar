@@ -1,47 +1,250 @@
 * {
-    padding: 20px;
-    margin: 0px;
-    justify-items: center;
-    
-}
-
-header h1 {
-    justify-content: center;
-    color: red;
-    background-color: rgb(8, 1, 8);
-}
-
-.card-vagas {
-    background-color: #ffffff;
-    gap: 10px;
-    width: 100%;
-    max-width:950px;
-    text-align:center;
-    box-sizing: border-box;
-    border-radius: 10%;
-    box-shadow: 0 0 0 20px rgb(107, 239, 13);
-    overflow: auto;
-    
-}
-
-.imagem{
-    border-radius: 15%;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    color: rgb(8, 8, 8);
-    background: rgb(211, 43, 76);
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.botao {
-    
-    
+.header {
+  background-color: rgba(0,0,0,0.3);
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  background-color: #ff6f61;
+  color: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto 60px;
+  padding: 0 20px;
+  flex-grow: 1;
+}
+
+
+.boas-vindas {
+  text-align: center;
+  margin-bottom: 50px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+.boas-vindas h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+  letter-spacing: 1.2px;
+}
+
+.boas-vindas p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #ffd7d1;
+}
+
+.vaga-card.destaque {
+  background-color: rgba(255 255 255 / 0.1);
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  display: flex;
+  gap: 30px;
+  padding: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+  backdrop-filter: blur(8px);
+}
+
+.vaga-imagem {
+  width: 280px;
+  max-width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(255,111,97,0.7);
+  transition: transform 0.3s ease;
+}
+
+.vaga-imagem:hover {
+  transform: scale(1.05);
+}
+
+.vaga-conteudo {
+  flex: 1;
+  color: #fff;
+}
+
+.vaga-conteudo h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  text-shadow: 0 1px 5px #ff6f61;
+}
+
+.vaga-conteudo p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ffd7d1;
+  line-height: 1.4;
+}
+
+.btn-acao {
+  background-color: #ff6f61;
+  color: white;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(255,111,97,0.7);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-acao:hover {
+  background-color: #e65a4d;
+  transform: scale(1.05);
+}
+
+
+.cursos, .bootcamps {
+  margin-top: 60px;
+  color: #fff;
+}
+
+.cursos h2, .bootcamps h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.cursos-lista, .bootcamps-lista {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.curso-card, .bootcamp-card {
+  background: rgba(255 255 255 / 0.15);
+  padding: 20px;
+  width: 220px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  text-align: center;
+  transition: transform 0.25s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.curso-card:hover, .bootcamp-card:hover {
+  background-color: rgba(255 255 255 / 0.35);
+  transform: translateY(-7px);
+}
+
+.curso-card img, .bootcamp-card img {
+  max-width: 96px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.2));
+}
+
+.curso-card h3, .bootcamp-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.curso-card a, .bootcamp-card a {
+  color: #ffd7d1;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 6px;
+  transition: color 0.3s ease;
+}
+
+.curso-card a:hover, .bootcamp-card a:hover {
+  color: #ff6f61;
+}
+
 
 .rodape {
-    color: rgb(252, 249, 249);
-    background-color: rgb(163, 84, 236);
-    margin-top:100px;
-    
+  background-color: rgba(0,0,0,0.4);
+  color: #ffd7d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  height: 50px;            
+  font-weight: 600;
+  padding: 0;              
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: default;
+  user-select: none;
+}
+
+.logo-icon {
+  font-size: 1.8rem;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.4));
+}
+
+.logo-text {
+  letter-spacing: 1.1px;
+}
+
+.logo-text span {
+  color: #ff6f61;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .vaga-card.destaque {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vaga-imagem {
+    margin: 0 auto 20px;
+  }
 }

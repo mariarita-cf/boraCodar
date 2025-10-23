@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> BoraCodar - Home</title>
+  <link rel="stylesheet" href="./home.css" />
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BoraCodar - Home</title>
+  <link rel="stylesheet" href="./css/home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav-menu">
+    <div class="logo">
+      <span class="logo-icon">💻</span>
+      <span class="logo-text">Bora<span style="color:#ff6f61;">Codar</span></span>
+    </div>
+   <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="missoes.html">Vagas</a></li>
+  <li><a href="cadastro.html">Cadastro/Login</a></li>
+  <li><a href="sobre.html">Sobre</a></li>
+</ul>
+  </nav>
+</header>
+
+
+<main class="container">
+
+  <section class="boas-vindas">
+    <h1>Bem-vindo ao BoraCodar - Seu portal de oportunidades em TI!</h1>
+    <p>Encontre vagas, cursos gratuitos e bootcamps para alavancar sua carreira.</p>
+  </section>
+
+  <section class="destaque-vaga">
+    <article class="vaga-card destaque">
+      <img src="./assets/indexvilao.png" alt="Heróis contra o Malware" class="vaga-imagem" />
+      <div class="vaga-conteudo">
+        <h2>Heróis contra o Malware</h2>
+        <p>Estamos buscando um(a) DEV especialista em capturar MALWARE. Venha fazer parte dessa missão!</p>
+        <button onclick="location.href='missoes.html'" class="btn-acao">Ver vagas</button>
+      </div>
+    </article>
+  </section>
+
+  <section id="cursos-gratis" class="cursos">
+    <h2>Cursos Gratuitos</h2>
+    <div class="cursos-lista">
+      <article class="curso-card">
+        <img src="https://img.icons8.com/color/96/000000/python.png" alt="Curso Python" />
+        <h3>Python para Iniciantes</h3>
+        <a href="https://www.cursoemvideo.com/course/python-3-mundo-1/" target="_blank" rel="noopener">Acessar curso</a>
+      </article>
+      <article class="curso-card">
+        <img src="https://img.icons8.com/color/96/000000/html-5.png" alt="Curso HTML5" />
+        <h3>HTML5 e CSS3</h3>
+        <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank" rel="noopener">Acessar curso</a>
+      </article>
+      <article class="curso-card">
+        <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="Curso JavaScript" />
+        <h3>JavaScript Essencial</h3>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide" target="_blank" rel="noopener">Acessar guia</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="bootcamps" class="bootcamps">
+    <h2>Bootcamps</h2>
+    <div class="bootcamps-lista">
+      <article class="bootcamp-card">
+        <img src="https://img.icons8.com/color/96/000000/react-native.png" alt="Bootcamp React" />
+        <h3>Bootcamp ReactJS</h3>
+        <a href="https://www.udemy.com/course/react-redux/" target="_blank" rel="noopener">Ver detalhes</a>
+      </article>
+      <article class="bootcamp-card">
+        <img src="https://img.icons8.com/color/96/000000/nodejs.png" alt="Bootcamp Node.js" />
+        <h3>Bootcamp Node.js</h3>
+        <a href="https://www.digitalinnovation.one/cursos" target="_blank" rel="noopener">Ver detalhes</a>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <p>&copy; 2025 BoraCodar - Todos contra o Malware</p>
+</footer>
+
+<script src="./src/components/missoes.js"></script>
+
+</body>
+</html>
